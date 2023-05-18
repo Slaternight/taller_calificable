@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Doctores</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario Doctores</h1>
+    </header>
+    <main>
+        <form id="registro-doctores-form">
+            <h2>Doctores Registro</h2>
+            <label for="nombre">Nombre:<span> *</span></label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:<span> *</span></label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="cedula">Número  de Cédula:<span> *</span></label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <label for="especialidad">Especialidad:<span> *</span></label>
+            <select id="especialidad" name="especialidad">
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiologia">Cardiologia</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Dermatologí"a>Dermatología</option>
+                <option value="Neurologia">Neurologia</option>
+                <option value="Odontología">Odontología</option>
+            </select>
+
+            <label for="consultorio">Número de consultorio:<span> *</span></label>
+            <input type="number" id="consultorio" name="consultorio" required>
+
+            <label for="correo">Correo de contacto:<span> *</span></label>
+            <input type="email" id="correo" name="correo" required>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <!-- <div class="boton-container">
+            <input type="button" id="botonVolver" value="Volver">
+        </div> -->
+    </main>
+    <script src="volver.js"></script>
+    <script src="registro-doctor.js"></script>
+</body>
+</body>
+</html>

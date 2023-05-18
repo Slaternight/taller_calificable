@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Gente</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario Gente</h1>
+    </header>
+    <main>
+        <form id="registro-pacientes-form">
+            <h2>Gente Registro</h2>
+            <label for="paciente">Nombre:<span> *</span></label>
+            <input type="text" id="paciente" name="paciente" required>
+
+            <label for="apellido">Apellido:<span> *</span></label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="cedula">Número de Cédula:<span> *</span></label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <label for="edad">Edad:<span> *</span></label>
+            <input type="number" id="edad" name="edad" required>
+
+            <label for="phone">Telefono:<span> *</span></label>
+            <input type="number" id="phone" name="phone" required>
+
+            <label for="especialidad">Especialidad requerida:<span> *</span></label>
+            <select id="especialidad" name="especialidad">
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiologia">Cardiologia</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Dermatologí"a>Dermatología</option>
+                <option value="Neurologia">Neurologia</option>
+                <option value="Odontología">Odontología</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <!-- <div class="boton-container">
+            <input type="button" id="botonVolver" value="Volver">
+        </div> -->
+    </main>
+    <!-- <script src="volver.js"></script> -->
+    <script src="registro-paciente.js"></script>
+</body>
+</body>
+</html>
